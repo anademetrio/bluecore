@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  * {
+      box-sizing: border-box;
+      font-family: Poppins;
+  }
+  body {
+    background-color: bisque;
+  }
+  .container {
+      max-width: 840px;
+      margin: 0 auto;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+  }
+  .question-box h4 {
+      font-size: 1.1rem;
+      color: #242424;
+  }
+  .question-box h4 span {
+      display: inline-block;
+      width: 2.2rem;
+      height: 2rem;
+      line-height: 2rem;
+      text-align: center;
+      background-color: coral;
+      border-radius: 5px;
+      color: #ffffff;
+      margin-right: 1rem;
+  }
+  .question-content {
+      padding: 1rem 2rem;
+  }
+  .form-check {
+      margin-bottom: 1rem;
+  }
+  .form-check label{
+      display: flex;
+      font-size: 1.1rem;
+      color: #242424;
+      padding: 1rem;
+      max-width: 320px;
+      border: 1px solid coral;
+  }
+  .form-check label:hover {
+      background-color: rgba(255, 127, 80, 0.3);
+  }
+  .form-check input {
+      display: none;
+  }
+  .form-check span {
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 5px;
+      margin-right: 1rem;
+  }
+  .form-check span i {
+      font-size: 1.2rem;
+      color: white;
+      display: none;
+  }
+  .form-check input:checked + label span {
+      background-color: coral;
+  }
+  .form-check input:checked + label span i{
+    display: block;
+}
+.form-group input[type=text], 
+.form-group input[type=text]:focus,
+.form-group input[type=text]:active {
+    width: 100%;
+    outline: 0;
+    border-bottom:1px solid coral;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.form-group input[type=text] + span {
+    float: right;
+    color: coral;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.form-input {
+    margin-bottom: 2rem;
+}
+.btn-default {
+    background-color: coral;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    margin-top: 1rem;
+    border: 0;
+    border-radius: 5px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+footer button {
+    padding: 0.5rem 1.2rem;
+    background-color: #242424;
+    color: white;
+    font-size: 1.1rem;
+    border: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+footer button:first-child {
+    margin-right: 0.1rem;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
